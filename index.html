@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="js/slick.css" rel="stylesheet" type="text/css">
+    <!-- CSSは、コードを書いた順番に読み込まれてゆくので、
+         style.cssはslick-theme.css,slick.cssの下に書こう！-->
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+</head>
+
+<body>
+   <p class="note">
+       画像のサイズは揃えておこう！<br>
+       矢印や点の調整は、slick-theme.cssで設定しよう！
+   </p>
+    <ul class="slider">
+        <li><a href="#"><img src="images/01.jpg" alt="image01"></a></li>
+        <li><a href="#"><img src="images/02.jpg" alt="image02"></a></li>
+        <li><a href="#"><img src="images/03.jpg" alt="image03"></a></li>
+        <li><a href="#"><img src="images/04.jpg" alt="image04"></a></li>
+    </ul>
+
+    <script>
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            //写真を何枚表示するか
+            slidesToShow: 3,
+            //写真を何枚ずつスクロールするか
+            slidesToScroll: 1,
+        });
+    </script>
+</body></html>

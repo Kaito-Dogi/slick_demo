@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .sliderの設定（自分のstyle.cssにも書き加えよう！）*/
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+
+/* .slider imgの設定（自分のstyle.cssにも書き加えよう！）*/
+.slider img{
+    height: auto;
+    width: 100%;
+}
+
+/*これ以降は関係なし！*/
+.note{
+    width: 50%;
+    margin: 150px auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    border: solid 3px #222;
+    padding: 36px;
+}
